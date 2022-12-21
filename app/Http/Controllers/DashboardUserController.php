@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+class DashboardUserController extends Controller
+{
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('role: isUser');
+    }
+
+    public function index()
+    {
+        if (Auth::user()->role == 'user') {
+            return view('dashboard-user.index');
+        } else {
+            abort(403);
+        }
+    }
+}

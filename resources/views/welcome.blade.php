@@ -63,7 +63,7 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Kontak</a>
             </div>
-            <a href="/login" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Sign In<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="/login " class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Sign In<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->

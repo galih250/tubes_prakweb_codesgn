@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <div class="pt-3">
-                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                        <h5 class="lh-base"></h5>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">

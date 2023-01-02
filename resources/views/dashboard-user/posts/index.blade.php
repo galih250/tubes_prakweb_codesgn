@@ -9,18 +9,24 @@
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Gambar</th>
               <th scope="col">Judul</th>
+              <th scope="col">Kategori</th>
               <th scope="col">Aksi</th>
             </tr>
           </thead>
           <tbody>
+            @foreach ($posts as $post)
             <tr>
-              <td>{{  }}</td>
-              <td>random</td>
-              <td>data</td>
-              <td>placeholder</td>
+              <td>{{ $loop->iteration }}</td>
+              <td>{{ $post->title }}</td>
+              {{-- <td>{{ $post->category->name }}</td> --}}
+              <td>
+                <a href="/dashboard-user/posts/{{ $post->id }}" class="badge bg-info"><span data-feather="eye"></span></a>
+                <a href="" class="badge bg-warning"><span data-feather="edit"></span></a>
+                <a href="" class="badge bg-danger"><span data-feather="x-circle"></span></a>
+              </td>
             </tr>
+            @endforeach
           </tbody>
         </table>
       </div>

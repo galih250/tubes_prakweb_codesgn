@@ -55,44 +55,53 @@
         </div>
         <!-- Spinner End -->
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
 
-        <a class="navbar-brand" href="#">
-            <img src="/logo/logo.png" alt="" width="80" height="70">
-          </a>
+            <a class="navbar-brand" href="#">
+                <img src="/logo/logo.png" alt="" width="80" height="70">
+            </a>
             <h2 class="m-0 text-primary">Tansah</h2>
 
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="About.html" class="nav-item nav-link">About</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Genre</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="#" class="dropdown-item">Romantis</a>
-                        <a href="#" class="dropdown-item">Horror</a>
-                        <a href="#" class="dropdown-item">Sejarah</a>
+            <button
+                type="button"
+                class="navbar-toggler me-4"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="About.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Genre</a>
+                        <div class="dropdown-menu bg-light m-0">
+                            <a href="#" class="dropdown-item">Romantis</a>
+                            <a href="#" class="dropdown-item">Horror</a>
+                            <a href="#" class="dropdown-item">Sejarah</a>
+                        </div>
                     </div>
+                    <a href="contact.html" class="nav-item nav-link">Team</a>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Team</a>
             </div>
-        </div>
-            <a href="/login" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Sign In<i class="fa fa-arrow-right ms-3"></i></a>
+            <a
+                href="/login"
+                class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Sign In<i class="fa fa-arrow-right ms-3"></i>
+            </a>
         </div>
     </nav>
     <!-- Navbar End -->
-
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5">
         <div class="container py-5">
             <h1 class="display-3 text-white mb-3 animated slideInDown">Tansah</h1>
             <p class="text-white animated slideInDown">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse hic placeat, voluptates eum non natus quis vitae repellendus deserunt facilis assumenda animi aliquid facere! Id velit officia laudantium perferendis quo voluptatem consequatur laborum magni fuga, fugiat ipsum! Laborum, illo accusamus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse hic placeat,
+                voluptates eum non natus quis vitae repellendus deserunt facilis assumenda animi
+                aliquid facere! Id velit officia laudantium perferendis quo voluptatem
+                consequatur laborum magni fuga, fugiat ipsum! Laborum, illo accusamus!
             </p>
         </div>
     </div>
@@ -101,10 +110,16 @@
     <!-- Projects Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <div
+                class="text-center mx-auto mb-5 wow fadeInUp"
+                data-wow-delay="0.1s"
+                style="max-width: 600px;">
                 <h3 class="mb-4">About</h3>
                 <p class="">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse hic placeat, voluptates eum non natus quis vitae repellendus deserunt facilis assumenda animi aliquid facere! Id velit officia laudantium perferendis quo voluptatem consequatur laborum magni fuga, fugiat ipsum! Laborum, illo accusamus!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse hic placeat,
+                    voluptates eum non natus quis vitae repellendus deserunt facilis assumenda animi
+                    aliquid facere! Id velit officia laudantium perferendis quo voluptatem
+                    consequatur laborum magni fuga, fugiat ipsum! Laborum, illo accusamus!
                 </p>
                 <h3 class="mt-5">Genre</h3>
             </div>
@@ -122,8 +137,15 @@
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/img-600x400-6.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a
+                                class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                href="img/img-600x400-6.jpg"
+                                data-lightbox="portfolio">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="">
+                                <i class="fa fa-link"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="pt-3">

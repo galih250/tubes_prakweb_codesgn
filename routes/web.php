@@ -30,7 +30,7 @@ Route::get('/dashboard-admin', [DashboardAdminController::class, 'index'])->name
 // user
 Route::get('/dashboard-user', function () {
     return view('dashboard-user.index');
-})->middleware(('auth'));
+})->middleware('auth');
 
 Route::get('/', function () {
     return view('welcome');

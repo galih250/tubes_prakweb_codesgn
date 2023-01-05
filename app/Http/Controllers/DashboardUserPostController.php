@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\Category;
-use \Cviebrock\EloquentSluggable\Services\SlugService;
-use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Storage;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
 
 class DashboardUserPostController extends Controller
 {
@@ -105,6 +106,7 @@ class DashboardUserPostController extends Controller
         $rules = [
             'title' => 'required|max:255',
             'category_id' => 'required',
+            'image' => 'image|file|max:1024',
             'body' => 'required'
         ];
 
@@ -113,6 +115,13 @@ class DashboardUserPostController extends Controller
         }
 
         $validateData = $request->validate($rules);
+
+        if ($request->file('image')) {
+            if ($request->oldImage) {
+                Storage::delete($request->oldImage);
+            }
+            $validateData['image'] = $request->file('image')->store('post-image');
+        }
 
         $validateData['user_id'] = auth()->user()->id;
         $validateData['excerpt'] = Str::limit(strip_tags($request->body), 100);
@@ -131,6 +140,9 @@ class DashboardUserPostController extends Controller
      */
     public function destroy(Post $post)
     {
+        if ($post->oldImage) {
+            Storage::delete($post->image);
+        }
         Post::destroy($post->id);
 
         return redirect('/dashboard-user/posts')->with('success', 'Post Berhasil Dihapus');

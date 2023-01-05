@@ -17,9 +17,9 @@
                 @method('delete') @csrf
                 <button
                     class="btn btn-danger "
-                    onclick="return confirm('Are you sure you want to delete this?')">
+                    onclick="return confirm('Anda Yakin akan menghapus?')">
                     <span data-feather="x-circle" class="align-text-bottom"></span>
-                    Delete</button>
+                    Hapus</button>
             </form>
 
             @if ($post->image)

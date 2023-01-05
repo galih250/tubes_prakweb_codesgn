@@ -17,7 +17,7 @@
                     class="nav-link {{  Request::is('dashboard-user/posts*') ? 'active' : '' }}"
                     href="/dashboard-user/posts">
                     <span data-feather="file-text" class="align-text-bottom"></span>
-                    Orders
+                    My Post
                 </a>
             </li>
         </ul>

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\AdminCategoryController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\DashboardUserPostController;
 
@@ -35,6 +36,15 @@ Route::get('/dashboard-user', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/teams', function () {
+    return view('teams');
+});
 
 Route::get('/dashboard-user/posts/checkSlug', [DashboardUserPostController::class, 'checkSlug'])->middleware('auth');
 Route::resource('/dashboard-user/posts', DashboardUserPostController::class)->middleware('auth');
+Route::resource('/dashboard-admin/posts', DashboardAdminController::class);
+
+Route::resource('/dashboard/categories', AdminCategoryController::class)->except('show')->middleware('admin');

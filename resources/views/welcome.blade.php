@@ -73,7 +73,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="About.html" class="nav-item nav-link">About</a>
+                    <a href="/about" class="nav-item nav-link">About</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Genre</a>
                         <div class="dropdown-menu bg-light m-0">
@@ -82,7 +82,7 @@
                             <a href="#" class="dropdown-item">Sejarah</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Team</a>
+                    <a href="/teams" class="nav-item nav-link">Team</a>
                 </div>
             </div>
             <a
